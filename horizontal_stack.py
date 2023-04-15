@@ -31,7 +31,7 @@ def horizontal_bar(data, names,putText = True):
             for y, (x, c) in enumerate(zip(xcenters, widths)):
                 ax.text(x, y, str(int(c)), ha='center', va='center',
                         color=text_color)
-    ax.legend(ncol=len(names), bbox_to_anchor=(0.02, 1.01),
+    ax.legend(ncol=len(names), bbox_to_anchor=(0.03, 1.01),
               loc='lower left', fontsize=15)
 
     return fig, ax

@@ -14,7 +14,7 @@ color1 = "#2c3c4b"
 color2 = "#ae3b2f"
 axis_label_size = 30
 axis_label_pad = 10
-digit_fontsize = 24
+digit_fontsize = 22
 
 # figure making
 fig, ax = plt.subplots(figsize=(18,8))
@@ -25,11 +25,11 @@ ax.bar([i/bar_cnt-0.02 for i in range(bar_cnt)], xdata1, width = bar_width, colo
 tw.bar([i/bar_cnt + 0.02 for i in range(bar_cnt)], xdata2, width = bar_width, color = color2)
 
 for i in range(bar_cnt):
-    x_pos = i/bar_cnt - 0.045
-    y_pos  =  xdata1[i]+0.005
+    x_pos = i/bar_cnt - 0.05
+    y_pos  =  xdata1[i]+0.007
     ax.text(x_pos, y_pos, str(y_pos)[:4],fontsize = digit_fontsize, color = color1)
     x_pos = i/bar_cnt
-    y_pos  =  xdata2[i]+0.005
+    y_pos  =  xdata2[i]+0.007
     tw.text(x_pos, y_pos, str(y_pos)[:4],fontsize = digit_fontsize, color = color2)
     
     

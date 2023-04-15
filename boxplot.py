@@ -15,8 +15,8 @@ for patch, color in zip(bp['boxes'], colors):
         patch.set_facecolor(color)
 ax.yaxis.grid(True)
 fontsize = 14
-ax.set_xlabel('Data1',fontsize = fontsize,) 
-ax.set_ylabel('Data2', fontsize = fontsize) 
+ax.set_xlabel('xLabel',fontsize = fontsize,) 
+ax.set_ylabel('yLabel', fontsize = fontsize) 
 plt.setp(ax.get_xticklabels(), fontsize=fontsize) 
 plt.setp(ax.get_yticklabels(), fontsize=fontsize)
 
